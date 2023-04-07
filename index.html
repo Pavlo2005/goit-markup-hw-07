@@ -22,6 +22,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <!-- <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> -->
   </head>
   <body>
@@ -29,7 +30,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       <div class="container container-flex">
         <nav class="header-nav container-flex">
           <a class="title link" href="./index.html">Web<span>Studio</span></a>
-          <ul class="list container-flex">
+          <ul class="list container-flex header-nav-list">
             <li class="header-nav-li link">
               <a
                 href="./index.html"
@@ -46,7 +47,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           </ul>
         </nav>
 
-        <address class="container-flex">
+        <address class="container-flex header-container-address">
           <ul class="header-info list container-flex">
             <li class="header-info-li">
               <a href="mailto:info@devstudio.com" class="header-info-a link"
@@ -60,6 +61,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
+
+        <nav class="header-nav-backdrop">
+          <button type="button" class="header-nav-backdrop-button">
+            <svg class="header-nav-backdrop-icon">
+              <use href="./images/icons.svg#icon-name-modal"></use>
+            </svg>
+          </button>
+        </nav>
       </div>
     </header>
     <main>
@@ -74,15 +83,15 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       <section class="info-text">
         <div class="container">
           <h2 class="hidden-title">info-text</h2>
-          <ul class="list container-flex">
+          <ul class="list info-text-list">
             <li class="info-text-li">
               <div class="info-text-logo">
                 <svg class="info-text-icon">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="standard-title">Strategy</h3>
-              <p class="standard-text">
+              <h3 class="info-text-title">Strategy</h3>
+              <p class="info-text-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -93,8 +102,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="standard-title">Punctuality</h3>
-              <p class="standard-text">
+              <h3 class="info-text-title">Punctuality</h3>
+              <p class="info-text-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -105,8 +114,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="standard-title">Diligence</h3>
-              <p class="standard-text">
+              <h3 class="info-text-title">Diligence</h3>
+              <p class="info-text-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -117,8 +126,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="standard-title">Technologies</h3>
-              <p class="standard-text">
+              <h3 class="info-text-title">Technologies</h3>
+              <p class="info-text-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -160,7 +169,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="team-ul list container-flex">
+          <ul class="team-ul list">
             <li class="team-li">
               <img
                 src="./images/img-people-1.jpg"
@@ -433,7 +442,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             <label for="footer-subscribe-email">
               <span class="footer-subscribe-title">Subscribe</span>
             </label>
-            <div class="container-flex">
+            <div class="">
               <input
                 id="footer-subscribe-email"
                 type="email"

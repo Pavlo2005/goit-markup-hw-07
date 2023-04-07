@@ -1,7 +1,5 @@
 body {
 	font-family: "Roboto", sans-serif;
-	/* width: 1440px;
-	margin: 0 auto 0 auto; */
 	color: #434455;
 }
 
@@ -25,7 +23,7 @@ img {
 }
 
 .container {
-	width: 1158px;
+	width: 428px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -66,9 +64,11 @@ img {
 
 
 
+
 /* header */
 
 .header {
+	width: 100%;
 	padding: 24px 0;
 	border-bottom: 1px solid #E7E9FC;
 }
@@ -92,6 +92,11 @@ img {
 
 .title>span {
 	color: #2e2f42;
+}
+
+.header-nav-list {
+	visibility: hidden;
+	display: none;
 }
 
 .header-nav-li:not(:last-child) {
@@ -135,6 +140,11 @@ img {
 
 /* Address */
 
+.header-container-address {
+	visibility: hidden;
+	display: none;
+}
+
 .header-info {
 	font-style: normal;
 	align-items: center;
@@ -159,6 +169,26 @@ img {
 
 }
 
+/* Backdrop */
+
+.header-nav-backdrop {}
+
+.header-nav-backdrop-button {
+	width: 32px;
+	height: 22px;
+
+	border: none;
+	background-color: #FFFFFF;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.header-nav-backdrop-icon {
+	width: 100%;
+	height: 100%;
+
+}
 
 
 /* Main */
@@ -166,8 +196,8 @@ img {
 /* Introduction */
 
 .introduction {
-	padding: 188px 0;
-	width: 1440px;
+	padding: 112px 0;
+	width: 428px;
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-1.jpg');
 	background-position: center;
@@ -183,10 +213,10 @@ img {
 
 .main-title {
 	display: flex;
-	margin-bottom: 48px;
+	margin-bottom: 72px;
 
-	width: 500px;
-	font-size: 56px;
+	width: 320px;
+	font-size: 36px;
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
@@ -222,6 +252,11 @@ img {
 }
 
 .info-text-logo {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	opacity: 0;
+
 	width: 264px;
 	padding: 24px 0;
 	background: #F4F4FD;
@@ -238,16 +273,39 @@ img {
 }
 
 .info-text-li {
-	width: 264px;
+	width: 100%;
 }
 
 .info-text-li:not(:last-child) {
-	margin-right: 24px;
+	margin-bottom: 72px;
+}
+
+.info-text-title {
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 8px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+}
+
+.info-text-text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #434455;
 }
 
 /* Info-pictures */
 
 .info-pictures {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	opacity: 0;
+
 	padding: 60px 0 120px 0;
 }
 
@@ -269,7 +327,7 @@ img {
 /* Team */
 
 .team {
-	padding: 120px 0 120px 0;
+	padding: 120px 0;
 	background-color: #F4F4FD;
 }
 
@@ -277,6 +335,7 @@ img {
 	margin-bottom: 72px;
 
 	font-size: 36px;
+	font-weight: 700;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	text-align: center;
@@ -285,6 +344,9 @@ img {
 }
 
 .team-li {
+	width: 264px;
+	margin: 0 auto;
+
 	background-color: #ffffff;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
@@ -292,7 +354,7 @@ img {
 }
 
 .team-li:not(:last-child) {
-	margin-right: 24px;
+	margin-bottom: 72px;
 }
 
 .team-text {
@@ -344,7 +406,7 @@ img {
 /* customers */
 
 .customers {
-	padding: 130px 0 120px 0;
+	padding: 96px 0;
 }
 
 .customers-title {
@@ -361,12 +423,17 @@ img {
 
 .customers-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 24px;
+	gap: 16px;
 }
 
 .customers-item {
-	width: 168px;
+	width: 190px;
+}
+
+.customers-item:not(:nth-last-child(-n+2)) {
+	margin-bottom: 72px;
 }
 
 .customers-logo {
@@ -407,29 +474,30 @@ img {
 	padding: 100px 0;
 }
 
-.footer-container {
-	display: flex;
-}
+.footer-container {}
 
 /* Footer title*/
 
 .footer-container-title {
-	margin-right: 120px;
-}
-
-.footer-container-text {
-	width: 264px;
-	margin: 0;
+	width: 268px;
+	margin: 0 auto;
+	margin-bottom: 72px;
 }
 
 .footer-title {
+	display: inline-block;
+	width: 100%;
+
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+
 	color: #4d5ae5;
+
+	text-align: center;
 }
 
 .footer-title>span {
@@ -437,15 +505,23 @@ img {
 }
 
 .footer-text {
-	width: 264px;
+	width: 268px;
+
 	color: #E7E9FC;
+
+	text-align: left;
+
 	margin-top: 16px;
+
 }
 
 /* footer soc */
 
 .footer-container-soc {
-	margin-right: auto;
+	margin: 0 auto;
+	width: 208px;
+
+	margin-bottom: 72px;
 }
 
 .footer-title-soc {
@@ -454,7 +530,10 @@ img {
 	margin-bottom: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
 	color: #ffffff;
+
+	text-align: center;
 }
 
 .footer-soc-list {
@@ -491,6 +570,8 @@ img {
 	height: 24px;
 }
 
+/* Subscribe */
+
 .footer-container-subscribe {}
 
 .footer-subscribe-title {
@@ -503,10 +584,12 @@ img {
 	color: #FFFFFF;
 
 	margin-bottom: 16px;
+
+	text-align: center;
 }
 
 .footer-subscribe-input {
-	width: 264px;
+	width: 100%;
 
 	background-color: #2E2F42;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -522,7 +605,7 @@ img {
 
 	padding: 8px 16px;
 
-	margin-right: 24px;
+	margin-bottom: 16px;
 }
 
 .footer-subscribe-button {
@@ -535,6 +618,8 @@ img {
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
+
+	margin: 0 auto;
 }
 
 .footer-subscribe-button-text {
