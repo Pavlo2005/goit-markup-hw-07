@@ -48,7 +48,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </nav>
 
         <address class="container-flex header-container-address">
-          <ul class="header-info list container-flex">
+          <ul class="header-info list">
             <li class="header-info-li">
               <a href="mailto:info@devstudio.com" class="header-info-a link"
                 >info@devstudio.com</a
@@ -63,9 +63,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </address>
 
         <nav class="header-nav-backdrop">
-          <button type="button" class="header-nav-backdrop-button">
+          <button type="button" class="header-nav-backdrop-button js-open-menu">
             <svg class="header-nav-backdrop-icon">
-              <use href="./images/icons.svg#icon-name-modal"></use>
+              <use href="./images/icons.svg#icon-charm-menu"></use>
             </svg>
           </button>
         </nav>
@@ -442,7 +442,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             <label for="footer-subscribe-email">
               <span class="footer-subscribe-title">Subscribe</span>
             </label>
-            <div class="">
+            <div class="footer-subscribe-iteams">
               <input
                 id="footer-subscribe-email"
                 type="email"
@@ -461,6 +461,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-container">
@@ -555,6 +556,41 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="js-close-menu modal-button">
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+      </button>
+
+      <div class="mobile-menu">
+        <nav>
+          <ul class="mobile-nav">
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Studio</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-blue mobile-menu-link link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="mobile-addres">
+           <ul class="header-info list">
+            <li class="header-info-li">
+              <a href="tel:+110001111111" class="header-info-a link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="header-info-li">
+              <a href="mailto:info@devstudio.com" class="header-info-a link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
