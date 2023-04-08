@@ -23,7 +23,7 @@ img {
 }
 
 .container {
-	width: 428px;
+	max-width: 428px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -193,7 +193,7 @@ img {
 
 .introduction {
 	padding: 112px 0;
-	width: 428px;
+	max-width: 1440px;
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-1.jpg');
 	background-position: center;
@@ -324,7 +324,6 @@ img {
 /* Team */
 
 .team {
-	min-width: 428px;
 	padding: 120px 0;
 	background-color: #F4F4FD;
 }
@@ -572,9 +571,13 @@ img {
 
 /* Subscribe */
 
-.footer-container-subscribe {}
+.footer-container-subscribe {
+	width: 100%;
+}
 
-.footer-subscribe-iteams {}
+.footer-subscribe-iteams {
+	width: 100%;
+}
 
 .footer-subscribe-title {
 	display: block;
@@ -591,7 +594,7 @@ img {
 }
 
 .footer-subscribe-input {
-	width: 398px;
+	width: 100%;
 
 	background-color: #2E2F42;
 	border: 1px solid rgba(255, 255, 255, 0.3);

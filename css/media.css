@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
         padding: 0 15px;
     }
 
@@ -35,7 +35,7 @@
     /* Main */
 
     .introduction {
-        width: 768px;
+        /* width: 768px; */
     }
 
     .main-title {
@@ -79,6 +79,14 @@
         width: 168px;
     }
 
+    .footer-container-subscribe {
+        width: auto;
+    }
+
+    .footer-subscribe-iteams {
+        width: auto;
+    }
+
     .footer-container {
         justify-content: left;
 
@@ -111,7 +119,7 @@
 
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 
@@ -131,7 +139,7 @@
     /* Main */
 
     .introduction {
-        width: 1158px;
+        /* width: 1158px; */
     }
 
     .main-title {
