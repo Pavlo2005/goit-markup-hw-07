@@ -165,7 +165,7 @@
 
     .info-pictures {
         visibility: visible;
-        position: static;
+        display: block;
         opacity: 1;
     }
 
