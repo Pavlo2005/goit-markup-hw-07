@@ -128,7 +128,7 @@ img {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 48px;
+	top: 54px;
 	transform: translateY(-100%);
 	left: 0;
 	width: 100%;
@@ -476,6 +476,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: left;
 
 	gap: 72px 0;
 }
