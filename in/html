@@ -1,0 +1,42 @@
+<section class="catalog">
+    <div class="container catalog-container">
+        <h2 class="catalog-title">Catalog</h2>
+        <ul class="list">
+            <li>
+                <img
+                    srcset="
+                      ./images/img-people-1.jpg    1x,
+                      ./images/img-people-1-2x.jpg 2x
+                    "
+                    src="./images/img-people-1.jpg"
+                    alt="people"
+                    width="275"
+                    height="274"
+                  />
+            </li>
+        </ul>
+    </div>
+</section>
+
+.catalog {
+    width: 624px;
+    padding: 0 12px;
+    background-color: #1E2827;
+}
+
+.catalog-container {
+    background-color: #1E2827;
+}
+
+.catalog-title {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
+
+    /* dark green */
+
+    color: #1E2827;
+}
